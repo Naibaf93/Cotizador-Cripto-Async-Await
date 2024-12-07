@@ -106,5 +106,10 @@ function mostrarCotizacionHTML(cotizacion) {
     precio.classList.add('precio');
     precio.innerHTML = `El precio es: <span>${PRICE}</span>`;
 
+    const precioAlto = document.createElement('p');
+    precioAlto.innerHTML = `El precio es más alto del día: <span>${HIGHDAY}</span>`;
+
+
     resultado.appendChild(precio);
+    resultado.appendChild(precioAlto);
 }
